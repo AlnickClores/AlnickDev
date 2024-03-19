@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import useMobileMenuToggle from "../libs/navbarToggle";
+import useMobileMenuToggle from "../hooks/navbarToggle";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {

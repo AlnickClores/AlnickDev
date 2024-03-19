@@ -13,13 +13,23 @@ function useMobileMenuToggle() {
       xIcon.classList.toggle("hidden");
     };
 
+    const handleLinkClick = () => {
+      toggleMenu();
+    };
+
     toggleButton.addEventListener("click", toggleMenu);
 
-    // Cleanup function to remove event listener when component unmounts
+    document.querySelectorAll(".navbar .nav-link").forEach((link) => {
+      link.addEventListener("click", handleLinkClick);
+    });
+
     return () => {
       toggleButton.removeEventListener("click", toggleMenu);
+      document.querySelectorAll(".navbar .nav-link").forEach((link) => {
+        link.removeEventListener("click", handleLinkClick);
+      });
     };
-  }, []); // Empty dependency array ensures this effect runs only once after initial render
+  }, []);
 }
 
 export default useMobileMenuToggle;
