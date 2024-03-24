@@ -1,6 +1,14 @@
 import React from "react";
 
 const Hero = () => {
+  const myResume = () => {
+    window.open(
+      `${window.location.origin}/myResume.pdf`,
+      "_blank",
+      "noreferrer noopener"
+    );
+  };
+
   return (
     <div>
       <div
@@ -21,10 +29,11 @@ const Hero = () => {
             Valenzuela, Philippines.
           </p>
         </div>
-        <button className="border border-[#45adff] rounded py-3 px-10 md:py-5 md:px-12 lg:px-20 bg-transparent hover:bg-[#45adff]/20 transition-all ease-in-out duration-500">
-          <a className="text-[#45adff] font-semibold" href="#">
-            Resume
-          </a>
+        <button
+          className="border border-[#45adff] rounded py-3 px-10 md:py-5 md:px-12 lg:px-20 bg-transparent hover:bg-[#45adff]/20 transition-all ease-in-out duration-500"
+          onClick={myResume}
+        >
+          <a className="text-[#45adff] font-semibold">Resume</a>
         </button>
       </div>
     </div>
