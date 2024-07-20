@@ -1,6 +1,8 @@
-<h2 align="left">Overview</h2>
+<h3 align="center"><a align="center" href="https://alnickdev.netlify.app/" target="_blank">🌐 AlnickDev</a></h3>
 
-<p align="left">This is a repository of my personal website. It is built to showcase my portfolio and contact information. It’s designed to be a professional representation of my work and skills.</p>
+<h2>Overview</h2>
+
+<p>This is a repository of my personal website. It is built to showcase my portfolio and contact information. It’s designed to be a professional representation of my work and skills.</p>
 
 <h2>Features</h2>
 
@@ -12,3 +14,4 @@
 
 <p><b>Development:</b> ReactJS, TailwindCSS</p>
 <p><b>Deployment:</b> Netlify</p>
+
