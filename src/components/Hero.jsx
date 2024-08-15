@@ -24,7 +24,7 @@ const Hero = () => {
             Front-end Developer.
           </h1>
           <p className="md:text-xl lg:text-2xl">
-            I'm currently Junior
+            I'm currently Senior
             <span className="text-[#45adff]"> IT student</span> based on
             Valenzuela, Philippines.
           </p>
