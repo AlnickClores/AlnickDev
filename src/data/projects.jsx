@@ -2,10 +2,18 @@ import Cumulus from "../assets/Cumulus.png";
 import TodoList from "../assets/TodoList.png";
 import Woody from "../assets/Woody.org.png";
 import QuoteGenerator from "../assets/QuoteGenerator.png";
+import KeyedVigenere from "../assets/KeyedVigenere.png";
 
 export const projects = [
   {
-    id: 0,
+    name: "Keyed Vigenere Cipher",
+    image: KeyedVigenere,
+    link: "https://vigenereverse.netlify.app/",
+    description:
+      "A website that encrypts and decrypts messages using the Keyed Vigenère Cipher with a custom key, offering a simple way to secure and decode text.",
+    techStack: ["HTML", "CSS", "Javascript"],
+  },
+  {
     name: "Cumulus",
     image: Cumulus,
     link: "https://alnickclores.github.io/Cumulus/",
@@ -14,7 +22,6 @@ export const projects = [
     techStack: ["HTML", "CSS", "React", "OpenWeather API"],
   },
   {
-    id: 1,
     name: "To-Do List",
     image: TodoList,
     link: "https://alnickclores.github.io/todolist-app/",
@@ -23,7 +30,6 @@ export const projects = [
     techStack: ["HTML", "CSS", "React"],
   },
   {
-    id: 2,
     name: "Woody.org",
     image: Woody,
     link: "https://alnickclores.github.io/Woody-org_final/WebDev_Defense_/Homepage.html",
@@ -32,7 +38,6 @@ export const projects = [
     techStack: ["HTML", "CSS", "PHP", "Oracle Database"],
   },
   {
-    id: 3,
     name: "Quote Generator",
     image: QuoteGenerator,
     link: "https://alnickclores.github.io/QuoteGenerator/year_end_proj/quote.html",

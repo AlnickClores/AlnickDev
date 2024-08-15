@@ -15,7 +15,7 @@ const Projects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-24 p-5 max-w-[670px] lg:max-w-[820px]">
         {projects.map((project) => {
           return (
-            <div className="flex flex-col justify-center" key={project.id}>
+            <div className="flex flex-col justify-center" key={project.name}>
               <a
                 className="flex items-center gap-2 w-fit text-[#e9e8e8] hover:text-[#45adff] cursor-pointer transition-all ease-in-out duration-500"
                 href={project.link}
@@ -35,10 +35,15 @@ const Projects = () => {
                 {project.description}
               </p>
               <div className="flex items-center gap-3 mt-5 text-center min-w-0">
-                {project.techStack.map((stack) => {
-                  <span className="text-[#45adff] text-xs font-semibold rounded-xl bg-[#45beff3a] px-3 py-1">
-                    {stack}
-                  </span>;
+                {project.techStack.map((stack, index) => {
+                  return (
+                    <span
+                      className="text-[#45adff] text-xs font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
+                      key={index}
+                    >
+                      {stack}
+                    </span>
+                  );
                 })}
               </div>
             </div>
