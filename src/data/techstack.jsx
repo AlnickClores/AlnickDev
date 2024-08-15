@@ -1,5 +1,5 @@
 export const techstack = [
-  "Javascript (ES6+)",
+  "Javascript",
   "Node.js",
   "React",
   "Express",
