@@ -12,10 +12,10 @@ const Projects = () => {
       <h1 className="text-[#ccd6f6] font-bold text-2xl lg:text-5xl">
         Things I've Built
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-24 p-5 max-w-[670px] lg:max-w-[820px]">
+      <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-16 p-5 max-w-[670px] lg:max-w-[820px]">
         {projects.map((project) => {
           return (
-            <div className="flex flex-col justify-center" key={project.name}>
+            <div className="flex flex-col" key={project.name}>
               <a
                 className="flex items-center gap-2 w-fit text-[#e9e8e8] hover:text-[#45adff] cursor-pointer transition-all ease-in-out duration-500"
                 href={project.link}
