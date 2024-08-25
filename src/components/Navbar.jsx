@@ -7,7 +7,7 @@ const Navbar = () => {
   useMobileMenuToggle();
   return (
     <div>
-      <div className="flex items-center justify-center">
+      <div className="animate-slideInTop flex items-center justify-center">
         <nav className="flex justify-between items-center w-full max-w-[800px] h-20 px-8 text-[#45adff] bg-[#02021b] fixed top-0 z-50">
           <div>
             <a

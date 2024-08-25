@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Logo from "./components/Logo";
 import useIntersectionObserver from "./hooks/intersectionObs";
 import "./index.css";
+import "./animation.css";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -16,7 +17,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 4000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
