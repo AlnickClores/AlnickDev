@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Logo from "./components/Logo";
 import useIntersectionObserver from "./hooks/intersectionObs";
+import "./index.css";
 
 function App() {
   const [loading, setLoading] = useState(true);
